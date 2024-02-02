@@ -14,6 +14,6 @@ app.use("/api/post", postRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/users", usersRoutes);
 
-app.listen(8800, ()=>{
-    console.log("Connected!")
+app.listen(process.env.PORT || PORT, ()=>{
+    console.log(`Server running on port ${PORT}`);
 });
