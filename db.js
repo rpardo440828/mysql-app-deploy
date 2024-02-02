@@ -1,8 +1,13 @@
 import mysql from "mysql";
 
 export const db = mysql.createConnection({
-    host:"localhost",
-    user:"root",
+    host:"mysql-app-database:3306",
+    user:"mysql",
     password:"@Wildcats2019",
-    database:"sqlproj"
+    database:"my_database"
+
+    // host:"localhost",
+    // user:"root",
+    // password:"@Wildcats2019",
+    // database:"sqlproj"
 });
